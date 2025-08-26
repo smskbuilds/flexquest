@@ -1,4 +1,4 @@
-# Flexibility App - Product Specification
+# FlexQuest - Product Specification
 
 ## Product Overview
 
@@ -118,23 +118,70 @@ Create an engaging, quest-based flexibility training application that transforms
 ## Technical Requirements
 
 ### Frontend
-- **Framework:** React.js with TypeScript
-- **Styling:** CSS-in-JS or Tailwind CSS
-- **State Management:** Redux or Context API
-- **Responsive Design:** Mobile-first approach
+- **Framework:** React 18+ with TypeScript 5.0+
+- **Styling:** Tailwind CSS with custom CSS variables for Ghibli color palette
+- **State Management:** Redux Toolkit with TypeScript for predictable state management
+- **Responsive Design:** Mobile-first approach with CSS Grid and Flexbox
+- **Animation Library:** Framer Motion for smooth 60fps animations
+- **Component Library:** Custom components with Radix UI primitives for accessibility
 
 ### Backend
-- **API:** RESTful API with Node.js/Express
-- **Database:** PostgreSQL for user data and progress tracking
-- **Authentication:** JWT-based user authentication
-- **Algorithm:** Machine learning model for intensity progression
+- **API:** RESTful API with Node.js 18+ and Express 4.x
+- **Database:** PostgreSQL 15+ with Prisma ORM for type-safe database operations
+- **Authentication:** JWT-based authentication with bcrypt for password hashing
+- **Algorithm:** Progressive intensity algorithm with user rating feedback system
+- **File Storage:** AWS S3 or similar for animation assets and user uploads
 
 ### Performance
 - **Load Time:** < 3 seconds initial load
 - **Responsiveness:** < 100ms interaction response
 - **Offline Support:** Basic functionality without internet connection
 - **Animation Performance:** Smooth 60fps animations for poro defender and monster battles
-- **Asset Optimization:** Efficient loading of hand-drawn animation assets
+- **Asset Optimization:** Efficient loading of hand-drawn animation assets with lazy loading
+- **Bundle Size:** < 500KB initial JavaScript bundle
+
+## Implementation Guide for Cursor
+
+### Project Structure
+```
+flexquest/
+├── frontend/                 # React TypeScript application
+│   ├── src/
+│   │   ├── components/      # Reusable UI components
+│   │   ├── pages/          # Route components
+│   │   ├── store/          # Redux store configuration
+│   │   ├── slices/         # Redux Toolkit slices
+│   │   ├── hooks/          # Custom React hooks
+│   │   ├── types/          # TypeScript type definitions
+│   │   ├── utils/          # Helper functions
+│   │   └── assets/         # Images, animations, sounds
+├── backend/                 # Node.js Express API
+│   ├── src/
+│   │   ├── controllers/    # Route handlers
+│   │   ├── models/         # Database models
+│   │   ├── routes/         # API endpoints
+│   │   ├── middleware/     # Custom middleware
+│   │   ├── services/       # Business logic
+│   │   └── utils/          # Helper functions
+├── shared/                  # Shared types and utilities
+└── docs/                    # Documentation
+```
+
+### Key Implementation Decisions
+- **State Management:** Redux Toolkit with TypeScript for complex app state
+- **Styling:** Tailwind CSS with custom design system for Ghibli aesthetics
+- **Animation:** Framer Motion for smooth 60fps poro and monster animations
+- **Database:** Prisma ORM for type-safe database operations
+- **Authentication:** JWT with refresh tokens for secure user sessions
+- **File Structure:** Feature-based organization for scalability
+
+### Development Priorities
+1. **Core Stretching Interface** - Basic quest system and stretch library
+2. **Poro Defender System** - Avatar appearance and basic monster battles
+3. **User Authentication** - Sign up, login, and session management
+4. **Progress Tracking** - XP, leveling, and quest completion
+5. **Flex-Bucks Economy** - Currency system and avatar shop
+6. **Advanced Features** - Social features and community quests
 
 ## User Interface Design
 
