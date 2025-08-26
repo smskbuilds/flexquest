@@ -102,9 +102,9 @@ flexquest/
 
 ## 📚 Documentation
 
-- [Product Specification](./flexquest.md) - Comprehensive product requirements and design
-- [Development Phases](./flexquest.md#development-phases) - Detailed implementation roadmap
-- [Technical Requirements](./flexquest.md#technical-requirements) - Architecture and performance specs
+- [Product Specification](./SPECIFICATION.md) - Comprehensive product requirements and design
+- [Development Phases](./SPECIFICATION.md#development-phases) - Detailed implementation roadmap
+- [Technical Requirements](./SPECIFICATION.md#technical-requirements) - Architecture and performance specs
 
 ## 🤝 Contributing
 
